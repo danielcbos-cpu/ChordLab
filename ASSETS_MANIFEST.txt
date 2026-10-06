@@ -1,0 +1,10 @@
+GeneralUserGS.sf3	8423728 bytes
+README.txt	1119 bytes
+data/blues-knowledge.js	3320 bytes
+data/harmony-db.js	9874 bytes
+data/harmony-knowledge.js	2011 bytes
+index.html	97314 bytes
+vendor/chordlab/spessasynth_core.js	632337 bytes
+vendor/chordlab/spessasynth_lib.js	76333 bytes
+vendor/chordlab/spessasynth_processor.js	402596 bytes
+vendor/chordlab/stb_vorbis.js	112883 bytes
