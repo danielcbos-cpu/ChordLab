@@ -1,9 +1,9 @@
-# ChordLab Android v0.2.1 — Portrait UI
+# ChordLab Android v0.3.0 — Portrait UI
 
-Proyecto Android Studio nativo que envuelve el paquete web de ChordLab v0.2.1 mediante un WebView local.
+Proyecto Android Studio nativo que envuelve el paquete web de ChordLab v0.3.0 mediante un WebView local.
 
 ## Incluye
-- ChordLab v0.2.1 Portrait UI.
+- ChordLab v0.3.0 Portrait UI.
 - GeneralUser GS SF3 local.
 - SpessaSynth y motor armónico incluidos en `app/src/main/assets/`.
 - WebView sin dependencia de Internet para los recursos de ChordLab.
@@ -13,10 +13,10 @@ Proyecto Android Studio nativo que envuelve el paquete web de ChordLab v0.2.1 me
 - Safe areas gestionadas por la propia interfaz web.
 - Nombre: ChordLab.
 - VersionCode: 201.
-- VersionName: 0.2.1.
+- VersionName: 0.3.0.
 
 ## Abrir en Android Studio
-1. Abre la carpeta `ChordLab_Android_v0.2.1_AndroidStudio`.
+1. Abre la carpeta `ChordLab_Android_v0.3.0_AndroidStudio`.
 2. Deja que Android Studio configure/sincronice Gradle.
 3. Instala un Android SDK con API 35.
 4. Ejecuta `app` en un teléfono Android o genera un APK desde **Build > Build APK(s)**.

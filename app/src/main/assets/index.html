@@ -294,6 +294,17 @@ button,select,input,textarea{touch-action:manipulation}
 }
 
 
+/* ChordLab v0.3 UX — Discover / Create / Study */
+.cl-header{position:sticky;top:0;z-index:100;padding:10px 18px 12px;background:linear-gradient(110deg,#0e2944,#0c2039 55%,#102d3d);border-bottom:1px solid #28485d;box-shadow:0 8px 24px #071a2b26}.cl-header-inner{max-width:1440px;margin:auto;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:18px}.cl-brand{display:flex;align-items:center;gap:10px;min-width:0}.cl-logo{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(145deg,#36c9e0,#2183bc);font-size:25px;color:#06263b;flex:0 0 auto}.cl-brand h1{margin:0;color:#fff;font-size:29px;line-height:.95;letter-spacing:-1px}.cl-brand h1 span{color:#39c6dc}.cl-brand small{display:block;color:#a8bdce;font-size:10px;margin-top:3px;white-space:nowrap}.cl-nav{display:flex;gap:3px;padding:3px;border:1px solid #35556b;background:#092038aa;border-radius:999px}.cl-nav-btn{min-width:105px;padding:8px 16px;border:0;border-radius:999px;background:transparent;color:#b9cbd7;font-size:13px;font-weight:750}.cl-nav-btn:hover{transform:none;background:#17374e}.cl-nav-btn.active{background:#168ec2;color:#fff;box-shadow:0 3px 12px #0d9bc733}.cl-tools{justify-self:end;display:flex;gap:7px}.cl-icon-btn{width:40px;height:40px;border-radius:50%;padding:0;background:#0a1d32;border:1px solid #2c4a5e;color:#eef6fa;display:grid;place-items:center}.cl-icon-btn:hover{transform:none;background:#15324b;border-color:#48bfd4}.audio-popover{position:absolute;right:18px;top:68px;width:min(380px,calc(100vw - 28px));padding:14px;background:#10263af5;border:1px solid #416177;border-radius:16px;box-shadow:0 18px 42px #071a2b66;backdrop-filter:blur(16px);color:#fff}.audio-popover-title{font-weight:800;margin-bottom:9px}.audio-track{padding:9px 0;border-top:1px solid #ffffff18}.audio-track-head{display:grid;grid-template-columns:24px 1fr;gap:7px;align-items:center}.audio-track-head label{grid-column:2;margin:0;color:#d7e6ee;font-size:10px;text-transform:none;letter-spacing:0}.audio-track-head select{grid-column:2;width:100%;height:34px;padding:4px 8px;font-size:12px;background:#17364f;border-color:#45677b;color:#fff}.audio-track>input{margin-top:7px;height:5px;accent-color:#39c6dc}
+.cl-app{max-width:1440px;margin:auto;padding:14px 18px 22px}.cl-view{min-height:calc(100vh - 82px)}.cl-card{background:#fff;border:1px solid #cbd5dc;border-radius:18px;box-shadow:0 8px 24px #1325360d}.discover-grid{display:grid;grid-template-columns:minmax(270px,.82fr) minmax(430px,1.35fr);gap:14px;align-items:stretch}.creator-controls{padding:15px;display:flex;flex-direction:column;gap:10px}.discover-grid>#discoverControlsHost>.creator-controls{height:100%}.creator-title{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}.creator-title h2{margin:1px 0 0;font-size:21px;color:#132f47}.eyebrow{font-size:9px;letter-spacing:1.2px;font-weight:800;color:#155e75}.creator-controls textarea{min-height:74px;max-height:100px;resize:none;background:#f8fafb;border-color:#cbd5dc;color:#1a2a36}.creator-controls textarea::placeholder{color:#7b8791}.mood-label{font-size:10px;font-weight:800;letter-spacing:.7px;text-transform:uppercase;color:#526677}.mood-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.mood-chip{padding:8px 6px;border-radius:10px;background:#f5f8fa;color:#3e5362;border-color:#d3dde3;font-size:11px}.mood-chip.selected{background:#e6f4f8;border-color:#1598bd;color:#155e75;box-shadow:inset 0 0 0 1px #1598bd33}.control-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}.compact-field{min-width:0}.compact-field label,.rangehead label{font-size:9px;margin-bottom:4px;color:#5a6c79;letter-spacing:.6px}.compact-field select{height:38px;padding:6px 9px;background:#f8fafb;border-color:#cbd5dc;color:#20313d;font-size:12px}.tempo-field .rangehead{margin:0 0 4px}.tempo-field .rangehead strong{font-size:11px;color:#155e75}.tempo-field input{height:6px}.advanced-create{padding-top:2px}.helper-copy{font-size:9px;line-height:1.35;margin:6px 0 0}.generate{height:42px;border-radius:12px;background:linear-gradient(135deg,#168ec2,#155e75)!important;margin:0}.proposals-card{padding:14px;display:flex;flex-direction:column}.section-heading{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:10px}.section-heading h2{margin:0;color:#132f47;font-size:20px}.section-heading p{margin:2px 0 0;color:#657785;font-size:10px}.summary-chip{padding:5px 8px;border-radius:999px;background:#eef4f6;color:#526677;border:1px solid #d4dfe4;font-size:9px;white-space:nowrap}.proposal-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;flex:1}.proposal-tile{position:relative;min-width:0;min-height:150px;padding:12px;border:1px solid #d4dfe4;border-radius:15px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;cursor:pointer;transition:.15s;overflow:hidden}.proposal-tile:hover{transform:translateY(-2px);box-shadow:0 8px 18px #16364a18}.proposal-tile .tile-number{position:absolute;top:8px;left:9px;width:25px;height:25px;border-radius:50%;display:grid;place-items:center;color:#fff;font-size:11px;font-weight:800}.proposal-tile .tile-icon{font-size:34px;line-height:1;margin-bottom:7px}.proposal-tile h3{margin:0;font-size:16px;color:#17354b}.proposal-tile .tile-seq{margin-top:3px;font-weight:800;color:#253f51;font-size:13px}.proposal-tile .tile-desc{margin:5px 0 0;font-size:9px;color:#5d7180;max-width:220px}.proposal-tile.safe{background:linear-gradient(145deg,#e8f7ef,#f8fbf9)}.proposal-tile.safe .tile-number{background:#2f9f6a}.proposal-tile.safe .tile-icon{color:#2f9f6a}.proposal-tile.variant{background:linear-gradient(145deg,#e8f6fb,#f9fcfd)}.proposal-tile.variant .tile-number{background:#299dcc}.proposal-tile.variant .tile-icon{color:#299dcc}.proposal-tile.creative{background:linear-gradient(145deg,#fff4df,#fffaf2)}.proposal-tile.creative .tile-number{background:#e89516}.proposal-tile.creative .tile-icon{color:#e89516}.proposal-tile.sophisticated{background:linear-gradient(145deg,#f2eafa,#fbf8fd)}.proposal-tile.sophisticated .tile-number{background:#8050aa}.proposal-tile.sophisticated .tile-icon{color:#8050aa}.proposal-footer{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-top:8px;padding-top:8px;border-top:1px solid #e1e7eb;color:#657785;font-size:9px}.proposal-footer>div{display:flex;gap:5px}.proposal-footer .small{padding:6px 8px;font-size:9px}
+.proposal-nav{display:grid;grid-template-columns:1fr auto 1fr;align-items:start;gap:12px;margin-bottom:8px}.nav-action{border:0;background:transparent;color:#155e75;font-weight:800;font-size:13px;padding:6px 4px}.nav-action:hover{transform:none;background:#edf5f7}.nav-action.next{text-align:right}.home-btn{width:36px;height:30px;border:0;background:#fff;color:#155e75;font-size:23px;line-height:1;padding:0;border-radius:10px}.home-btn:hover{transform:none;background:#edf5f7}.proposal-position{display:flex;flex-direction:column;align-items:center;gap:1px}.proposal-position span{font-size:10px;color:#526677;font-weight:800}.proposal-detail{height:calc(100vh - 125px);min-height:520px;display:grid;grid-template-columns:1.05fr .95fr 1fr;gap:12px}.detail-card{background:#fff;border:1px solid #cbd5dc;border-radius:18px;box-shadow:0 7px 20px #1325360b;min-width:0}.detail-identity{padding:18px;display:flex;flex-direction:column;justify-content:center}.detail-icon{font-size:42px;line-height:1}.detail-kicker{font-size:10px;color:#637785;margin-top:10px}.detail-title{font-size:28px;color:#132f47;margin:2px 0 6px}.detail-description{font-size:12px;color:#536a79;line-height:1.45;margin:0 0 14px}.detail-chords{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}.detail-chord{background:#f4f7f8;border:1px solid #d3dfe4;border-radius:12px;padding:11px 5px;text-align:center}.detail-chord .name{font-size:19px;font-weight:850;color:#18364b}.detail-chord .common{font-size:9px;color:#617381;margin-top:1px}.detail-chord .roman{font-size:18px;color:#155e75;font-weight:850;margin-top:6px}.detail-chord .func{font-size:8px;color:#637785;margin-top:1px}.detail-audio{padding:15px;display:flex;flex-direction:column;gap:11px;justify-content:center}.play-large{height:50px;border-radius:999px;background:#155e75!important;color:#fff!important;border:0!important;font-weight:850!important;font-size:15px}.audio-local-row{display:flex;align-items:center;gap:8px}.audio-local-row .mini-track{flex:1}.mini-track label{font-size:9px;text-transform:none;letter-spacing:0;color:#526677;margin:0}.mini-track input{height:5px}.detail-actions{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.detail-actions button{font-size:10px;padding:8px 5px}.detail-analysis{padding:16px;display:flex;flex-direction:column;gap:9px;overflow:auto}.analysis-title{font-size:16px;font-weight:850;color:#17354b}.analysis-copy{font-size:11px;color:#536a79;line-height:1.5;margin:0}.analysis-highlight{padding:9px;border-radius:10px;background:#f5edff;color:#71409a;font-size:10px;font-weight:700}.analysis-list{display:grid;gap:5px}.analysis-row{display:grid;grid-template-columns:82px 1fr;gap:7px;padding:7px 0;border-top:1px solid #e2e8eb;font-size:9px}.analysis-row strong{color:#155e75}.analysis-row span{color:#5b6e7a}.detail-analysis details{border-top:1px solid #e2e8eb;padding-top:7px}.detail-analysis summary{font-size:10px;color:#155e75;font-weight:800;cursor:pointer}.detail-analysis .groove-option{min-height:36px}
+.create-layout{display:grid;grid-template-columns:minmax(270px,.72fr) minmax(500px,1.7fr);gap:14px}.create-layout>#createControlsHost>.creator-controls{height:100%}.create-result-card{padding:14px;min-width:0}.editor-head{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:8px}.editor-head h3{margin:0;color:#17354b;font-size:17px}.editor-chords{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.editor-chord{position:relative;min-width:0;padding:10px 6px;border-radius:12px;border:1px solid #d0dce2;background:#f7f9fa;text-align:center}.editor-chord select{width:100%;height:36px;padding:4px 3px;background:transparent;border:0;color:#17354b;font-size:16px;font-weight:850;text-align:center}.editor-chord .common{font-size:9px;color:#617381}.editor-chord .roman{font-size:18px;color:#155e75;font-weight:850;margin-top:5px}.editor-chord .func{font-size:8px;color:#657785}.editor-chord .duration{margin-top:7px}.editor-chord .duration select{height:28px;border:1px solid #cbd6dc;background:#fff;font-size:10px;font-weight:600}.editor-chord .remove{position:absolute;right:3px;top:3px;width:20px;height:20px;padding:0;border-radius:50%;background:#fff;color:#8a5560;border-color:#d8c7cb;font-size:12px}.create-secondary{margin-top:10px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px}.create-secondary details{border:1px solid #d7e0e5;border-radius:11px;padding:8px;background:#fafcfd}.create-secondary summary{cursor:pointer;font-size:10px;font-weight:800;color:#155e75}.create-secondary .actions{margin-top:7px}.create-secondary .favorites{margin-top:6px;display:grid;gap:5px}.fav{display:flex;justify-content:space-between;gap:7px;align-items:center;padding:6px 8px;background:#f3f7f8;border:1px solid #d6e0e4;border-radius:8px;font-size:9px;color:#506573}.fav .small{padding:4px 7px}.study-layout{height:calc(100vh - 115px);min-height:520px;display:grid;grid-template-columns:1.05fr .95fr 1fr;gap:12px}.study-card{background:#fff;border:1px solid #cbd5dc;border-radius:18px;box-shadow:0 7px 20px #1325360b;padding:16px;min-width:0;overflow:auto}.study-card h2,.study-card h3{color:#17354b;margin:0 0 7px}.study-kicker{font-size:9px;color:#155e75;letter-spacing:1px;font-weight:850}.study-sequence{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;margin:12px 0}.study-sequence .detail-chord{padding:9px 3px}.study-card p{font-size:10px;color:#5a6e7b;line-height:1.5}.study-topic{padding:8px 0;border-top:1px solid #e1e7eb}.study-topic strong{font-size:10px;color:#155e75}.study-topic span{display:block;font-size:9px;color:#5a6e7b;margin-top:2px}.study-cta{display:flex;gap:6px;margin-top:9px}.study-cta button{flex:1;font-size:10px;padding:8px}.study-empty{grid-column:1/-1;display:grid;place-items:center;background:#fff;border:1px dashed #cbd5dc;border-radius:18px;color:#657785;padding:30px;text-align:center}.cl-view[hidden]{display:none!important}.creator-controls.moved-create{height:100%}
+@media(max-width:1050px){.cl-header-inner{grid-template-columns:1fr auto}.cl-nav{grid-column:1/-1;grid-row:2;justify-self:center}.discover-grid,.create-layout{grid-template-columns:1fr}.discover-grid>#discoverControlsHost>.creator-controls{height:auto}.proposal-detail,.study-layout{grid-template-columns:1fr 1fr;height:auto;min-height:0}.detail-analysis{grid-column:1/-1;max-height:270px}.study-card:last-child{grid-column:1/-1}}
+@media(max-width:820px){.cl-app{padding:10px}.cl-header{padding:8px 10px}.cl-header-inner{gap:8px}.cl-brand h1{font-size:25px}.cl-brand small{font-size:9px}.cl-logo{width:40px;height:40px;font-size:22px}.cl-nav{width:100%;grid-column:1/-1}.cl-nav-btn{flex:1;min-width:0;padding:7px 8px;font-size:12px}.cl-tools{gap:4px}.cl-icon-btn{width:36px;height:36px}.discover-grid{display:flex;flex-direction:column}.creator-controls{padding:11px;gap:7px}.creator-title h2{font-size:18px}.creator-controls textarea{min-height:58px;max-height:70px}.mood-grid{gap:5px}.mood-chip{padding:7px 4px;font-size:10px}.compact-controls{gap:6px}.compact-field select{height:34px;font-size:11px}.generate{height:38px}.proposals-card{padding:10px}.section-heading{margin-bottom:7px}.section-heading h2{font-size:17px}.section-heading p{font-size:9px}.proposal-grid{gap:7px}.proposal-tile{min-height:120px;padding:8px}.proposal-tile .tile-icon{font-size:28px;margin-bottom:4px}.proposal-tile h3{font-size:14px}.proposal-tile .tile-seq{font-size:11px}.proposal-tile .tile-desc{display:none}.proposal-footer{font-size:8px}.proposal-footer>span{display:none}.proposal-footer{justify-content:flex-end}.proposal-detail{height:auto;min-height:0;display:grid;grid-template-columns:1fr;gap:8px}.proposal-nav{margin-bottom:4px}.detail-identity{padding:11px}.detail-icon{font-size:32px}.detail-title{font-size:22px}.detail-description{font-size:10px;margin-bottom:9px}.detail-chords{gap:5px}.detail-chord{padding:8px 3px}.detail-chord .name{font-size:17px}.detail-chord .roman{font-size:16px;margin-top:4px}.detail-audio{padding:10px;gap:8px}.play-large{height:43px}.detail-analysis{max-height:none;padding:11px}.analysis-copy{font-size:10px}.analysis-row{grid-template-columns:72px 1fr}.create-layout{display:flex;flex-direction:column}.create-result-card{padding:10px}.editor-chords{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.create-secondary{grid-template-columns:1fr}.study-layout{display:grid;grid-template-columns:1fr;height:auto}.study-card:last-child{grid-column:auto}.study-sequence{gap:4px}.audio-popover{right:8px;top:58px}.cl-view{min-height:0}}
+@media(max-width:390px){.cl-brand small{display:none}.cl-tools .cl-icon-btn:nth-child(3){display:none}.cl-nav-btn{font-size:11px}.mood-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.control-row{grid-template-columns:1fr 1fr}.tempo-field{grid-column:1/-1}.proposal-tile{min-height:108px}.proposal-tile .tile-icon{font-size:25px}.detail-chord .name{font-size:15px}.detail-chord .roman{font-size:14px}}
+/* Reset legacy global rules that remain in the original HTML stylesheet. */
+.cl-header{display:block;margin:0;max-width:none}.cl-header label{text-transform:none;letter-spacing:0}.cl-header select{margin:0}.cl-app .panel,.cl-app .layout{all:unset}.cl-app button{box-shadow:none}.cl-app input,.cl-app textarea,.cl-app select{box-sizing:border-box}.cl-app .muted{color:#5a6e7b}
+
 </style>
 
 
@@ -330,64 +341,99 @@ window.chordSfInit=async function(ctx){
 
 </head>
 <body>
-<header class="studio-header">
-  <div class="studio-top">
-    <div class="brand"><div class="logo">♫</div><div><h1>Chord<span>Lab</span></h1><small>Laboratorio de armonía musical</small></div></div>
-    <nav class="studio-nav" aria-label="Navegación principal"><span>Explora</span><span>·</span><span>Combina</span><span>·</span><span>Aprende</span><span>·</span><span>Crea</span></nav>
-    <div class="studio-tools"><span class="version">v0.2.1 Portrait UI</span><button type="button" class="header-icon" title="Configuración" aria-label="Configuración">⚙</button><button type="button" class="header-icon" title="Ayuda" aria-label="Ayuda">?</button><button type="button" class="header-icon" title="Tema" aria-label="Tema">☾</button></div>
+<header class="cl-header">
+  <div class="cl-header-inner">
+    <div class="cl-brand"><div class="cl-logo">♫</div><div><h1>Chord<span>Lab</span></h1><small>Laboratorio de armonía musical</small></div></div>
+    <nav class="cl-nav" aria-label="Navegación principal">
+      <button id="navDiscover" class="cl-nav-btn active" type="button">Descubrir</button>
+      <button id="navCreate" class="cl-nav-btn" type="button">Crear</button>
+      <button id="navStudy" class="cl-nav-btn" type="button">Estudio</button>
+    </nav>
+    <div class="cl-tools">
+      <button id="audioToggle" class="cl-icon-btn" type="button" title="Instrumentos y volumen" aria-label="Instrumentos y volumen">🔊</button>
+      <button class="cl-icon-btn" type="button" title="Configuración" aria-label="Configuración">⚙</button>
+      <button class="cl-icon-btn" type="button" title="Tema" aria-label="Tema">☾</button>
+    </div>
   </div>
-  <div class="header-instruments">
-    <div class="header-instrument"><label for="instrument1">Instrumento 1</label><select id="instrument1"><option value="piano" selected>🎹 Piano acústico</option><option value="electric_piano">🎹 Piano eléctrico</option><option value="guitar_nylon">🎸 Guitarra acústica nylon</option><option value="guitar">🎸 Guitarra eléctrica limpia</option><option value="guitar_overdrive">🎸 Guitarra eléctrica overdrive</option><option value="organ">🎹 Órgano</option><option value="strings">🎻 Cuerdas</option><option value="pad">🌌 Pad ambiental</option><option value="pluck">🪕 Kalimba / Pluck</option></select><div class="header-volume"><span class="volume-icon" aria-hidden="true">🔊</span><input id="volume1" type="range" min="0" max="100" value="100" aria-label="Volumen del instrumento 1"></div></div>
-    <div class="instrument-divider" aria-hidden="true"></div>
-    <div class="header-instrument"><label for="instrument2">Instrumento 2</label><select id="instrument2"><option value="bass" selected>🎸 Bajo eléctrico</option><option value="piano">🎹 Piano acústico</option><option value="electric_piano">🎹 Piano eléctrico</option><option value="guitar_nylon">🎸 Guitarra acústica nylon</option><option value="guitar">🎸 Guitarra eléctrica limpia</option><option value="guitar_overdrive">🎸 Guitarra eléctrica overdrive</option><option value="organ">🎹 Órgano</option><option value="strings">🎻 Cuerdas</option><option value="pad">🌌 Pad ambiental</option><option value="pluck">🪕 Kalimba / Pluck</option><option value="none">Ninguno</option></select><div class="header-volume"><span class="volume-icon" aria-hidden="true">🔊</span><input id="volume2" type="range" min="0" max="100" value="80" aria-label="Volumen del instrumento 2"></div></div>
+  <div id="audioPanel" class="audio-popover" hidden>
+    <div class="audio-popover-title">Instrumentos</div>
+    <div class="audio-track">
+      <div class="audio-track-head"><span>🎹</span><label for="instrument1">Instrumento 1</label><select id="instrument1"><option value="piano" selected>🎹 Piano acústico</option><option value="electric_piano">🎹 Piano eléctrico</option><option value="guitar_nylon">🎸 Guitarra acústica nylon</option><option value="guitar">🎸 Guitarra eléctrica limpia</option><option value="guitar_overdrive">🎸 Guitarra eléctrica overdrive</option><option value="organ">🎹 Órgano</option><option value="strings">🎻 Cuerdas</option><option value="pad">🌌 Pad ambiental</option><option value="pluck">🪕 Kalimba / Pluck</option></select></div>
+      <input id="volume1" type="range" min="0" max="100" value="100" aria-label="Volumen del instrumento 1">
+    </div>
+    <div class="audio-track">
+      <div class="audio-track-head"><span>🎸</span><label for="instrument2">Instrumento 2</label><select id="instrument2"><option value="bass" selected>🎸 Bajo eléctrico</option><option value="piano">🎹 Piano acústico</option><option value="electric_piano">🎹 Piano eléctrico</option><option value="guitar_nylon">🎸 Guitarra acústica nylon</option><option value="guitar">🎸 Guitarra eléctrica limpia</option><option value="guitar_overdrive">🎸 Guitarra eléctrica overdrive</option><option value="organ">🎹 Órgano</option><option value="strings">🎻 Cuerdas</option><option value="pad">🌌 Pad ambiental</option><option value="pluck">🪕 Kalimba / Pluck</option><option value="none">Ninguno</option></select></div>
+      <input id="volume2" type="range" min="0" max="100" value="80" aria-label="Volumen del instrumento 2">
+    </div>
   </div>
   <p class="sr-only" id="audioStatus" role="status">Motor SoundFont local · GeneralUser GS · listo para instrumentos MIDI.</p>
 </header>
-<div class="wrap">
-<div class="layout">
-<aside class="panel">
-<h3>Diseña tu búsqueda</h3>
-<div class="field"><label for="idea">Tu idea (opcional)</label><textarea id="idea" placeholder="Ej.: un estribillo pop rock esperanzador, con energía y un toque nostálgico..."></textarea></div>
-<div class="field"><label for="mood">Emoción / ambiente</label><select id="mood"><option value="happy">Alegre</option><option value="dance">Bailable</option><option value="relax">Relajante</option><option value="romantic">Romántica</option><option value="sad">Triste / melancólica</option><option value="epic">Épica</option><option value="mysterious">Misteriosa</option><option value="energetic">Enérgica</option></select></div>
-<div class="field"><label for="genre">Estilo musical</label><select id="genre"><option>Pop</option><option>Pop rock</option><option>Rock</option><option>Indie</option><option>Blues</option><option>Jazz</option><option>Funk / soul</option><option>Electrónica</option><option>Balada</option><option>Folk</option><option>Flamenco / rumba</option><option>Ambient</option></select></div>
-<div class="row">
-<div class="field"><label for="key">Tonalidad</label><select id="key"><option value="auto">Automática</option><option>C</option><option>G</option><option>D</option><option>A</option><option>E</option><option>F</option><option>Bb</option><option>Am</option><option>Em</option><option>Dm</option><option>Bm</option><option>F#m</option></select></div>
-<div class="field" style="grid-column:1/-1"><label>Complejidad de las propuestas</label><div class="muted" style="padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--panel2)"><strong>⭐ Segura</strong> → <strong>✨ Diferente</strong> → <strong>🎨 Creativa</strong> → <strong>🎓 Sofisticada</strong></div></div>
-</div>
-<div class="field"><div class="rangehead"><label for="bpm">Tempo</label><strong><span id="bpmval">112</span> BPM</strong></div><input id="bpm" type="range" min="50" max="180" value="112"></div>
-<div class="field"><label for="section">Sección de la canción</label><select id="section">
-<option value="intro">Intro</option><option value="verse">Estrofa</option><option value="pre">Preestribillo</option><option value="chorus">Estribillo</option><option value="bridge">Puente</option><option value="outro">Final / outro</option>
-</select></div>
-<div class="row">
-<div class="field"><label for="startChord">Acorde de partida</label><select id="startChord"><option value="auto">Automático</option></select></div>
-<div class="field"><label for="meter">Tipo de compás</label><select id="meter"><option value="4/4" selected>4/4</option><option value="3/4">3/4</option><option value="6/8">6/8</option><option value="2/4">2/4</option><option value="5/4">5/4</option><option value="7/8">7/8</option></select></div>
-</div>
-<p class="muted" style="margin:-3px 0 12px">La duración y el número de acordes se determinan automáticamente según la progresión musical elegida. Puedes cambiar el acorde de partida sin alterar su estructura. En las propuestas más sencillas puedes explorar acordes alternativos con la misma función armónica.</p>
-<button class="primary generate" id="generate">✦ Generar progresiones</button>
-</aside>
-<main class="main">
-<section class="panel">
-<div class="topbar"><div><h3>Propuestas armónicas</h3><span class="section-note">Cuatro caminos armónicos para la misma idea musical</span></div><span class="proposal-hint">La tarjeta activa también sirve para detener la reproducción</span></div>
-<p class="muted" id="summary" style="margin:7px 0 15px">Propuestas iniciales para explorar.</p>
-<div class="progressions" id="results"></div><div class="export-all"><button class="small" id="exportAllText">⇩ Texto · 4 propuestas</button><button class="small" id="exportAllMidi">♫ MIDI · 4 propuestas</button></div>
-</section>
-<section class="panel">
-<div class="topbar"><h3>Mis favoritos</h3><button class="small ghost" id="clearFav">Vaciar</button></div>
-<div class="favorites" id="favorites"><span class="muted">Guarda una progresión con ♡ para tenerla a mano durante esta sesión.</span></div>
-</section>
-<section class="panel">
-<div class="topbar"><h3>Construye una canción</h3><button class="small ghost" id="clearSong">Limpiar estructura</button></div>
-<p class="muted">Añade una propuesta a la sección elegida y organiza el esquema de tu canción.</p>
-<div class="actions" style="margin:10px 0"><button class="small" id="addSong">＋ Añadir propuesta actual</button><button class="small" id="exportSong">⇩ Exportar estructura</button></div>
-<div id="songSections" class="favorites"><span class="muted">Todavía no has añadido secciones.</span></div>
-</section>
-<div class="info">
-<div class="mini"><h4>Cómo se generan</h4><p>El motor combina familias armónicas curadas por estilo, tonalidad, acorde de partida, emoción y complejidad. Cada progresión conserva su propia estructura de acordes y compases.</p></div><div class="mini"><h4>🧠 Base de conocimiento armónico</h4><p>ChordLab empieza a separar tres capas: <strong>progresión</strong>, <strong>función</strong> y <strong>aplicación</strong>. La explicación se recalcula después de cada edición para que aprender forme parte del proceso creativo.</p></div>
-<div class="mini"><h4>Reproducción</h4><p>El audio utiliza muestras del banco GeneralUser GS mediante SpessaSynth. La aplicación funciona sin conexión cuando se abre desde un servidor local.</p></div>
-</div>
+
+<main class="cl-app">
+  <section id="viewDiscover" class="cl-view active-view">
+    <div class="discover-grid">
+      <div id="discoverControlsHost"></div>
+      <section class="cl-card proposals-card">
+        <div class="section-heading"><div><h2>Propuestas</h2><p>Toca una para abrirla y escucharla a pantalla completa.</p></div><span id="summary" class="summary-chip">4 caminos musicales</span></div>
+        <div id="results" class="proposal-grid"></div>
+        <div class="proposal-footer"><span>⭐ Segura · ✨ Diferente · 🎨 Creativa · 🎓 Sofisticada</span><div><button class="small" id="exportAllText" type="button">⇩ Texto</button><button class="small" id="exportAllMidi" type="button">♫ MIDI</button></div></div>
+      </section>
+    </div>
+  </section>
+
+  <section id="viewProposal" class="cl-view" hidden>
+    <div class="proposal-nav">
+      <button id="proposalBack" class="nav-action" type="button">← Volver</button>
+      <div class="proposal-position"><button id="proposalHome" class="home-btn" type="button" title="Volver a la pantalla principal" aria-label="Volver a la pantalla principal">⌂</button><span id="proposalCounter">1 / 4</span></div>
+      <button id="proposalNext" class="nav-action next" type="button">Siguiente →</button>
+    </div>
+    <div id="proposalDetail" class="proposal-detail"></div>
+  </section>
+
+  <section id="viewCreate" class="cl-view" hidden>
+    <div class="create-layout">
+      <div id="createControlsHost"></div>
+      <section class="cl-card create-result-card">
+        <div class="section-heading"><div><h2>Construye tu progresión</h2><p>Selecciona un acorde para editarlo, sustituirlo o escuchar el resultado.</p></div><span class="summary-chip">Motor armónico activo</span></div>
+        <div id="createEditor"></div>
+        <div class="create-secondary">
+          <details><summary>♡ Mis favoritos</summary><div class="favorites" id="favorites"><span class="muted">Guarda una progresión con ♡ para tenerla a mano durante esta sesión.</span></div><button class="small ghost" id="clearFav" type="button">Vaciar favoritos</button></details>
+          <details><summary>🎼 Construye una canción</summary><p class="muted">Añade la propuesta actual a la sección elegida.</p><div class="actions"><button class="small" id="addSong" type="button">＋ Añadir propuesta actual</button><button class="small" id="exportSong" type="button">⇩ Exportar estructura</button><button class="small ghost" id="clearSong" type="button">Limpiar</button></div><div id="songSections" class="favorites"><span class="muted">Todavía no has añadido secciones.</span></div></details>
+          <details><summary>⇩ Exportar</summary><div class="actions"><button class="small" id="createExportText" type="button">▤ Texto</button><button class="small" id="createExportMidi" type="button">♫ MIDI</button></div></details>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <section id="viewStudy" class="cl-view" hidden>
+    <div id="studyContent" class="study-layout"></div>
+  </section>
+
+  <div id="creatorControls" class="cl-card creator-controls">
+    <div class="creator-title"><div><span class="eyebrow">LABORATORIO MUSICAL</span><h2>¿Qué quieres crear?</h2></div><button id="surpriseBtn" class="small ghost" type="button">🎲 Sorpréndeme</button></div>
+    <textarea id="idea" placeholder="Ej.: un estribillo pop rock esperanzador, con energía y un toque nostálgico..."></textarea>
+    <div class="mood-label">Ambiente / emoción</div>
+    <div class="mood-grid">
+      <button class="mood-chip selected" data-mood="happy" type="button">😊 Alegre</button><button class="mood-chip" data-mood="energetic" type="button">🔥 Enérgica</button><button class="mood-chip" data-mood="relax" type="button">🌙 Relax</button><button class="mood-chip" data-mood="romantic" type="button">❤️ Romántica</button><button class="mood-chip" data-mood="sad" type="button">😔 Triste</button><button class="mood-chip" data-mood="dance" type="button">🎵 Bailable</button>
+    </div>
+    <select id="mood" class="sr-only" aria-hidden="true" tabindex="-1"><option value="happy">Alegre</option><option value="dance">Bailable</option><option value="relax">Relajante</option><option value="romantic">Romántica</option><option value="sad">Triste / melancólica</option><option value="epic">Épica</option><option value="mysterious">Misteriosa</option><option value="energetic">Enérgica</option></select>
+    <div class="control-row compact-controls">
+      <div class="compact-field"><label for="genre">Estilo</label><select id="genre"><option>Pop</option><option>Pop rock</option><option>Rock</option><option>Indie</option><option>Blues</option><option>Jazz</option><option>Funk / soul</option><option>Electrónica</option><option>Balada</option><option>Folk</option><option>Flamenco / rumba</option><option>Ambient</option></select></div>
+      <div class="compact-field"><label for="key">Tonalidad</label><select id="key"><option value="auto">Automática</option><option>C</option><option>G</option><option>D</option><option>A</option><option>E</option><option>F</option><option>Bb</option><option>Am</option><option>Em</option><option>Dm</option><option>Bm</option><option>F#m</option></select></div>
+      <div class="compact-field tempo-field"><div class="rangehead"><label for="bpm">Tempo</label><strong><span id="bpmval">112</span> BPM</strong></div><input id="bpm" type="range" min="50" max="180" value="112"></div>
+    </div>
+    <div class="advanced-create">
+      <div class="control-row">
+        <div class="compact-field"><label for="section">Sección</label><select id="section"><option value="intro">Intro</option><option value="verse">Estrofa</option><option value="pre">Preestribillo</option><option value="chorus" selected>Estribillo</option><option value="bridge">Puente</option><option value="outro">Final / outro</option></select></div>
+        <div class="compact-field"><label for="startChord">Acorde inicial</label><select id="startChord"><option value="auto">Automático</option></select></div>
+        <div class="compact-field"><label for="meter">Compás</label><select id="meter"><option value="4/4" selected>4/4</option><option value="3/4">3/4</option><option value="6/8">6/8</option><option value="2/4">2/4</option><option value="5/4">5/4</option><option value="7/8">7/8</option></select></div>
+      </div>
+      <p class="muted helper-copy">La estructura, duración y número de acordes los decide la familia armónica. Aquí solo controlas los parámetros que realmente cambian la idea musical.</p>
+    </div>
+    <button class="primary generate" id="generate" type="button">✨ Generar propuestas</button>
+  </div>
 </main>
-</div><footer>ChordLab · Herramienta creativa para músicos · Los favoritos y la estructura se guardan en este navegador.</footer>
-</div>
+
 
 <script src="./data/harmony-db.js"></script>
 <script src="./data/blues-knowledge.js"></script>
@@ -399,6 +445,7 @@ const MAJOR=[0,2,4,5,7,9,11],MINOR=[0,2,3,5,7,8,10];
 const moods={happy:'Alegre',dance:'Bailable',relax:'Relajante',romantic:'Romántica',sad:'Melancólica',epic:'Épica',mysterious:'Misteriosa',energetic:'Enérgica'};
 const sections={intro:'Intro',verse:'Estrofa',pre:'Preestribillo',chorus:'Estribillo',bridge:'Puente',outro:'Final / outro'};
 let current=[],favorites=JSON.parse(localStorage.getItem('chordlab_favorites')||'[]'),song=JSON.parse(localStorage.getItem('chordlab_song')||'[]'),audioCtx=null,activeSources=new Set(),playbackToken=0,sampleInstruments={},samplePromises={};
+let activeMode='discover',selectedProposal=0;
 const $=id=>document.getElementById(id);
 $('bpm').addEventListener('input',()=> $('bpmval').textContent=$('bpm').value);
 function populateStartChord(){
@@ -776,54 +823,78 @@ function proposalMeta(p){
   if(type==='creative') return {icon:'✦',desc:'Más color y movimientos inesperados.',cls:'creative'};
   return {icon:'▰',desc:'Riqueza armónica para ir más allá.',cls:'sophisticated'};
 }
-function render(){
- const root=$('results');root.innerHTML='';
- current.forEach((p,pi)=>{
-  ensureOriginalChords(p); const meta=proposalMeta(p);
-  const card=document.createElement('article');card.className='prog studio-prog '+meta.cls;
-  const row=document.createElement('div');row.className='prog-row';
-  const info=document.createElement('div');info.className='prog-info';info.innerHTML=`<div class="prog-title"><span class="proposal-icon">${meta.icon}</span><strong>${p.title}</strong></div><p>${meta.desc}</p>`;
-  const chordWrap=document.createElement('div');chordWrap.className='prog-chord-area';
-  const chords=document.createElement('div');chords.className='chords';ensureDurations(p);
-  p.chords.forEach((c,ci)=>{
-    const el=document.createElement('div');el.className='chord';
-    const sel=document.createElement('select');sel.setAttribute('aria-label','Acorde '+(ci+1));
-    allChordOptions(p.key,c.name).forEach(x=>{let op=document.createElement('option');op.value=x;op.textContent=x;op.selected=x===c.name;sel.append(op)});
-    sel.addEventListener('change',()=>{p.chords[ci]=parseChordForKey(p.key,sel.value);render()});sel.title=`Editar ${c.name}`;
-    const topLine=document.createElement('div');topLine.className='chord-topline';const common=document.createElement('span');common.className='chord-common-name';common.textContent=`(${commonChordName(c)})`;topLine.append(sel,common);
-    const degree=document.createElement('div');degree.className='degree';degree.innerHTML=`<strong>${romanForChord(p.key,c)}</strong><span class="degree-function">${degreeFunctionLabel(p.key,c)}</span>`;
-    const durationLabel=document.createElement('label');durationLabel.className='chord-duration';durationLabel.textContent='Duración (compases)';
-    const duration=document.createElement('select');duration.setAttribute('aria-label',`Duración del acorde ${ci+1} en compases`);const total=Number(p.totalBars)||p.chords.length;
-    for(let units=1;units<=total*2;units++){const n=units/2;const op=document.createElement('option');op.value=n;op.textContent=n;op.selected=Math.abs(p.durations[ci]-n)<.001;duration.append(op)}
-    if(![...duration.options].some(o=>o.selected)){const op=document.createElement('option');op.value=p.durations[ci];op.textContent=Number(p.durations[ci].toFixed(2));op.selected=true;duration.append(op)}
-    duration.addEventListener('change',()=>{const old=[...p.durations],next=+duration.value,delta=next-old[ci],balanceIndex=ci===p.durations.length-1?ci-1:p.durations.length-1;p.durations[ci]=next;if(balanceIndex>=0)p.durations[balanceIndex]-=delta;const valid=p.durations.every(v=>v>=.5)&&Math.abs(p.durations.reduce((a,b)=>a+b,0)-total)<.001;if(!valid){p.durations=old;$('summary').textContent=`La suma debe ser de ${total} compases. Ajusta otra duración antes de ampliar este acorde.`}render()});
-    durationLabel.append(duration);el.append(topLine,degree,durationLabel);renderSubstitutionPopover(p,c,ci,el);
-    // Android/táctil: un toque sobre la tarjeta abre/cierra las sustituciones.
-    if(p.harmonyType==='safe'||p.harmonyType==='variant'){
-      el.addEventListener('click',(ev)=>{
-        if(ev.target.closest('select,button,.substitution-popover')) return;
-        const wasOpen=el.classList.contains('touch-open');
-        document.querySelectorAll('.chord.touch-open').forEach(x=>x.classList.remove('touch-open'));
-        if(!wasOpen) el.classList.add('touch-open');
-      });
-    }
-    const rem=document.createElement('button');rem.className='remove';rem.textContent='×';rem.title='Eliminar acorde';rem.onclick=()=>{if(p.chords.length>1){p.chords.splice(ci,1);distributeBars(p);render()}};el.append(rem);chords.append(el);
-  });
-  chordWrap.append(chords);
-  const actions=document.createElement('div');actions.className='proposal-actions';
-  const play=document.createElement('button');play.className='listen-btn progression-play';play.textContent='▶ Escuchar';play.onclick=()=>{if(play.dataset.playing==='1'){cancelPlayback();play.dataset.playing='0';play.textContent='▶ Escuchar';return}document.querySelectorAll('.progression-play').forEach(x=>{x.dataset.playing='0';x.textContent='▶ Escuchar'});play.dataset.playing='1';play.textContent='■ Detener';playProgression(p,rhythmSuggestions(p.genre)[0]).finally(()=>{if(play.dataset.playing==='1'){play.dataset.playing='0';play.textContent='▶ Escuchar'}})};
-  const exportRow=document.createElement('div');exportRow.className='action-row';
-  const txt=document.createElement('button');txt.className='small';txt.textContent='▤ Texto';txt.title='Exportar esta progresión como texto';txt.onclick=()=>download(progressionText(p),`chordlab-${String(pi+1).padStart(2,'0')}-${safeFilePart(p.title)}.txt`,'text/plain');
-  const mid=document.createElement('button');mid.className='small';mid.textContent='♫ MIDI';mid.title='Exportar esta progresión como MIDI';mid.onclick=()=>exportMidi(p,`chordlab-${String(pi+1).padStart(2,'0')}-${safeFilePart(p.title)}.mid`);
-  const fav=document.createElement('button');fav.className='small icon-action';fav.textContent='♡';fav.title='Guardar en favoritos';fav.onclick=()=>{favorites.push(JSON.parse(JSON.stringify(p)));renderFavorites()};exportRow.append(txt,mid,fav);actions.append(play,exportRow);
-  row.append(info,chordWrap,actions);card.append(row);
-  const hm=document.createElement('div');hm.className='harmony-meta';const fam=document.createElement('span');fam.textContent='Familia · '+(p.harmonyFamily||'Patrón armónico');const orig=document.createElement('span');orig.innerHTML='Originalidad · <b class="harmony-score">'+(p.harmonyScore||50)+'/100</b>';const tags=document.createElement('span');tags.textContent=(p.harmonyTags||[]).join(' · ');hm.append(fam,orig,tags);card.append(hm);
-  if(p.genre==='Blues'){const src=document.createElement('div');src.className='muted advanced-note';src.textContent='Base didáctica: corpus Blues de ChordLab · conceptos sintetizados de los materiales aportados.';card.append(src)}
-  if(p.harmonyNote||p.chords.length){const ex=document.createElement('details');ex.className='harmony-details';ex.open=false;ex.innerHTML='<summary>🔎 ¿Por qué funciona?</summary><div class="harmony-explain">'+harmonyKnowledgeText(p)+'</div>';const teach=document.createElement('div');teach.className='teaching-box';const title=document.createElement('div');title.className='teaching-title';title.textContent='🎓 Lo que puedes aprender de esta progresión';teach.append(title);harmonyTeachingData(p).forEach(([a,b])=>{const row=document.createElement('div');row.className='teaching-row';row.innerHTML='<strong>'+a+'</strong><span>'+b+'</span>';teach.append(row)});ex.append(teach);card.append(ex)}
-  const grooveDetails=document.createElement('details');grooveDetails.className='groove-details';const grooveSummary=document.createElement('summary');grooveSummary.textContent='🎵 Explorar patrón rítmico';grooveDetails.append(grooveSummary);const grooveBox=document.createElement('div');grooveBox.className='groove-box';const grooveTitle=document.createElement('div');grooveTitle.className='groove-heading';grooveTitle.innerHTML='<span>◉ Motor de patrones · '+p.genre+'</span><small>Patrones rítmicos habituales del estilo</small>';grooveBox.append(grooveTitle);const grooveList=document.createElement('div');grooveList.className='groove-list';rhythmSuggestions(p.genre).slice(0,3).forEach((groove,gi)=>{const b=document.createElement('button');b.className='groove-option';b.type='button';b.innerHTML='<span class="groove-icon">'+(['▤','♫','⌁'][gi])+'</span><span class="groove-text"><strong>'+groove.name+'</strong><small>'+groove.desc+'</small></span><span class="groove-play">▶</span>';b.title='Escuchar '+groove.name;b.onclick=()=>{document.querySelectorAll('.groove-option').forEach(x=>x.classList.remove('playing'));b.classList.add('playing');playProgression(p,groove)};grooveList.append(b)});grooveBox.append(grooveList);grooveDetails.append(grooveBox);card.append(grooveDetails);
-  const advanced=document.createElement('details');advanced.className='advanced-details';const sm=document.createElement('summary');sm.textContent=`ℹ Detalles · ${p.chords.length} acordes · ${p.totalBars||p.chords.length} compases`;advanced.append(sm);const body=document.createElement('div');body.className='advanced-body';body.textContent=`Movimiento entre acordes: ${p.chords.slice(1).reduce((s,c,i)=>s+voiceDistance(p.chords[i],c),0).toFixed(1)} · Cierre: ${p.chords.at(-1).degree===0?'reposo en tónica':p.chords.at(-1).degree===4?'tensión dominante':'cierre abierto'}`;advanced.append(body);card.append(advanced);root.append(card);
- });
+function proposalClass(p){return p.harmonyType==='safe'?'safe':p.harmonyType==='variant'?'variant':p.harmonyType==='creative'?'creative':'sophisticated'}
+function proposalMeta(p){
+ const type=proposalClass(p);
+ if(type==='safe')return{icon:'★',label:'Segura',desc:'Equilibrada y efectiva para empezar.'};
+ if(type==='variant')return{icon:'✦',label:'Diferente',desc:'Un giro original manteniendo la coherencia.'};
+ if(type==='creative')return{icon:'🎨',label:'Creativa',desc:'Más color y movimientos inesperados.'};
+ return{icon:'🎓',label:'Sofisticada',desc:'Riqueza armónica para ir más allá.'};
 }
+function render(){
+ const root=$('results'); if(!root)return; root.innerHTML='';
+ current.forEach((p,pi)=>{
+   ensureOriginalChords(p); ensureDurations(p); const meta=proposalMeta(p);
+   const card=document.createElement('article'); card.className=`proposal-tile ${proposalClass(p)}`; card.setAttribute('role','button'); card.tabIndex=0;
+   card.innerHTML=`<span class="tile-number">${pi+1}</span><div class="tile-icon">${meta.icon}</div><h3>${meta.label}</h3><div class="tile-seq">${p.chords.map(c=>c.name).join(' · ')}</div><p class="tile-desc">${meta.desc}</p>`;
+   const open=()=>{selectedProposal=pi;showProposal(pi)};
+   card.addEventListener('click',open); card.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open()}});
+   root.append(card);
+ });
+ renderCreateEditor(); renderStudy();
+}
+function renderEditableChords(p,container){
+ container.innerHTML=''; if(!p)return;
+ const head=document.createElement('div'); head.className='editor-head';
+ head.innerHTML=`<div><h3>${p.title}</h3><span class="muted">${moods[p.mood]||p.mood} · ${p.genre} · ${p.key} · ${p.totalBars||p.chords.length} compases</span></div>`;
+ const listen=document.createElement('button'); listen.className='small'; listen.type='button'; listen.textContent='▶ Escuchar';
+ listen.onclick=()=>{if(listen.dataset.playing==='1'){cancelPlayback();listen.dataset.playing='0';listen.textContent='▶ Escuchar';return}listen.dataset.playing='1';listen.textContent='■ Detener';playProgression(p,rhythmSuggestions(p.genre)[0]).finally(()=>{listen.dataset.playing='0';listen.textContent='▶ Escuchar'})}; head.append(listen); container.append(head);
+ const grid=document.createElement('div');grid.className='editor-chords';
+ p.chords.forEach((c,ci)=>{
+   const el=document.createElement('div');el.className='editor-chord';
+   const sel=document.createElement('select');sel.setAttribute('aria-label',`Acorde ${ci+1}`);allChordOptions(p.key,c.name).forEach(x=>{const op=document.createElement('option');op.value=x;op.textContent=x;op.selected=x===c.name;sel.append(op)});
+   sel.onchange=()=>{p.chords[ci]=parseChordForKey(p.key,sel.value);render()};
+   const common=document.createElement('div');common.className='common';common.textContent=commonChordName(c);
+   const roman=document.createElement('div');roman.className='roman';roman.textContent=romanForChord(p.key,c);
+   const func=document.createElement('div');func.className='func';func.textContent=degreeFunctionLabel(p.key,c);
+   const dur=document.createElement('div');dur.className='duration';const ds=document.createElement('select');ds.setAttribute('aria-label','Duración en compases');const total=Number(p.totalBars)||p.chords.length;for(let units=1;units<=total*2;units++){const n=units/2;const op=document.createElement('option');op.value=n;op.textContent=n+' comp.';op.selected=Math.abs(p.durations[ci]-n)<.001;ds.append(op)}ds.onchange=()=>{const old=[...p.durations],next=+ds.value,delta=next-old[ci],balanceIndex=ci===p.durations.length-1?ci-1:p.durations.length-1;p.durations[ci]=next;if(balanceIndex>=0)p.durations[balanceIndex]-=delta;const valid=p.durations.every(v=>v>=.5)&&Math.abs(p.durations.reduce((a,b)=>a+b,0)-total)<.001;if(!valid)p.durations=old;render()};dur.append(ds);
+   el.append(sel,common,roman,func,dur); renderSubstitutionPopover(p,c,ci,el);
+   if(p.chords.length>1){const rem=document.createElement('button');rem.className='remove';rem.type='button';rem.textContent='×';rem.title='Eliminar acorde';rem.onclick=()=>{p.chords.splice(ci,1);distributeBars(p);render()};el.append(rem)}
+   grid.append(el);
+ });
+ container.append(grid);
+ const actions=document.createElement('div');actions.className='actions';
+ const detail=document.createElement('button');detail.className='small';detail.textContent='↗ Ver propuesta';detail.onclick=()=>{selectedProposal=current.indexOf(p);showProposal(selectedProposal)};
+ const save=document.createElement('button');save.className='small';save.textContent='♡ Guardar';save.onclick=()=>{favorites.push(JSON.parse(JSON.stringify(p)));renderFavorites()};actions.append(detail,save);container.append(actions);
+}
+function renderCreateEditor(){const el=$('createEditor');if(!el)return;renderEditableChords(current[selectedProposal]||current[0],el)}
+function studyRows(p){return harmonyTeachingData(p).map(([a,b])=>`<div class="study-topic"><strong>${a}</strong><span>${b}</span></div>`).join('')}
+function renderStudy(){
+ const el=$('studyContent');if(!el)return;const p=current[selectedProposal]||current[0];if(!p){el.innerHTML='<div class="study-empty"><div><h3>Genera una progresión para empezar a estudiarla</h3><p>La música será el punto de partida de la explicación.</p></div></div>';return}
+ const meta=proposalMeta(p);ensureDurations(p);
+ el.innerHTML=`<article class="study-card"><span class="study-kicker">ESTUDIO · ${meta.label.toUpperCase()}</span><h2>${p.chords.map(c=>c.name).join(' – ')}</h2><div class="study-sequence">${p.chords.map(c=>`<div class="detail-chord"><div class="name">${c.name}</div><div class="common">${commonChordName(c)}</div><div class="roman">${romanForChord(p.key,c)}</div><div class="func">${degreeFunctionLabel(p.key,c)}</div></div>`).join('')}</div><p>${meta.desc} La progresión está en ${p.key}, dentro de ${p.genre}, pensada para ${sections[p.section]||p.section}.</p><div class="study-cta"><button id="studyListen" type="button">▶ Escuchar</button><button id="studyCreate" type="button">✎ Llevar a Crear</button></div></article><article class="study-card"><span class="study-kicker">¿POR QUÉ FUNCIONA?</span><h2>La música primero</h2><p>${harmonyKnowledgeText(p)}</p><div class="analysis-highlight">🧠 La explicación se recalcula cuando cambias un acorde.</div>${studyRows(p)}</article><article class="study-card"><span class="study-kicker">EXPLORAR</span><h2>¿Qué quieres investigar?</h2><div class="study-topic"><strong>↔ Misma función</strong><span>Busca acordes que puedan ocupar el mismo papel armónico.</span></div><div class="study-topic"><strong>🎼 Escalas</strong><span>Relaciona cada acorde con sus posibilidades melódicas.</span></div><div class="study-topic"><strong>🎹 Voice leading</strong><span>Observa cómo se mueven las voces entre acordes.</span></div><div class="study-topic"><strong>🔀 Sustituciones</strong><span>Experimenta con dominantes, disminuidos e intercambio de color.</span></div><div class="study-topic"><strong>🎨 Rearmonización</strong><span>Descubre qué ocurre cuando cambias la función sin perder la dirección musical.</span></div></article>`;
+ $('studyListen').onclick=()=>playProgression(p,rhythmSuggestions(p.genre)[0]);$('studyCreate').onclick=()=>setMode('create');
+}
+function renderDetail(p){
+ const el=$('proposalDetail');if(!el||!p)return;ensureDurations(p);const meta=proposalMeta(p);
+ el.innerHTML=`<article class="detail-card detail-identity ${proposalClass(p)}"><div class="detail-icon">${meta.icon}</div><div class="detail-kicker">PROPUESTA ${selectedProposal+1} · ${meta.label.toUpperCase()}</div><h1 class="detail-title">${p.title}</h1><p class="detail-description">${meta.desc} ${p.harmonyNote||''}</p><div class="detail-chords">${p.chords.map(c=>`<div class="detail-chord"><div class="name">${c.name}</div><div class="common">${commonChordName(c)}</div><div class="roman">${romanForChord(p.key,c)}</div><div class="func">${degreeFunctionLabel(p.key,c)}</div></div>`).join('')}</div></article><article class="detail-card detail-audio"><button id="detailPlay" class="play-large" type="button">▶ Escuchar</button><div class="audio-local-row"><span>🎹</span><div class="mini-track"><label>Piano acústico</label><input id="detailVol1" type="range" min="0" max="100" value="${getInstrumentVolume(1)}"></div></div><div class="audio-local-row"><span>🎸</span><div class="mini-track"><label>Bajo eléctrico</label><input id="detailVol2" type="range" min="0" max="100" value="${getInstrumentVolume(2)}"></div></div><div class="detail-actions"><button id="detailVariant" type="button">↔ Variar</button><button id="detailSimilar" type="button">🔀 Similar</button><button id="detailSave" type="button">♡ Guardar</button></div></article><article class="detail-card detail-analysis"><div class="analysis-title">🧠 ¿Por qué funciona?</div><p class="analysis-copy">${harmonyKnowledgeText(p)}</p><div class="analysis-highlight">${meta.desc}</div><div class="analysis-list">${harmonyTeachingData(p).map(([a,b])=>`<div class="analysis-row"><strong>${a}</strong><span>${b}</span></div>`).join('')}</div><details><summary>🎵 Explorar patrón rítmico</summary><div class="groove-box" id="detailGroove"></div></details></article>`;
+ const play=$('detailPlay');play.onclick=()=>{if(play.dataset.playing==='1'){cancelPlayback();play.dataset.playing='0';play.textContent='▶ Escuchar';return}play.dataset.playing='1';play.textContent='■ Detener';playProgression(p,rhythmSuggestions(p.genre)[0]).finally(()=>{play.dataset.playing='0';play.textContent='▶ Escuchar'})};
+ $('detailVol1').oninput=e=>{$('volume1').value=e.target.value;applySoundFontVolumes()};$('detailVol2').oninput=e=>{$('volume2').value=e.target.value;applySoundFontVolumes()};
+ $('detailVariant').onclick=()=>{selectedProposal=(selectedProposal+1)%current.length;renderDetail(current[selectedProposal]);updateProposalNav()};$('detailSimilar').onclick=()=>setMode('create');$('detailSave').onclick=()=>{favorites.push(JSON.parse(JSON.stringify(p)));renderFavorites()};
+ const gb=$('detailGroove');rhythmSuggestions(p.genre).slice(0,3).forEach((g,i)=>{const b=document.createElement('button');b.className='groove-option';b.type='button';b.innerHTML=`<span class="groove-icon">${['▤','♫','⌁'][i]}</span><span class="groove-text"><strong>${g.name}</strong><small>${g.desc}</small></span><span class="groove-play">▶</span>`;b.onclick=()=>playProgression(p,g);gb.append(b)});
+}
+function updateProposalNav(){const total=current.length||4;$('proposalCounter').textContent=`${selectedProposal+1} / ${total}`;$('proposalBack').disabled=false;$('proposalNext').disabled=selectedProposal>=total-1;$('proposalNext').style.opacity=selectedProposal>=total-1?.45:1}
+function showProposal(i){if(!current.length)return;selectedProposal=Math.max(0,Math.min(current.length-1,i));renderDetail(current[selectedProposal]);updateProposalNav();setMode('proposal')}
+function setMode(mode){activeMode=mode;document.querySelectorAll('.cl-view').forEach(v=>v.hidden=true);const target=$('view'+mode.charAt(0).toUpperCase()+mode.slice(1));if(target)target.hidden=false;document.querySelectorAll('.cl-nav-btn').forEach(b=>b.classList.remove('active'));const nav=$('nav'+mode.charAt(0).toUpperCase()+mode.slice(1));if(nav)nav.classList.add('active');if(mode==='create'){$('createControlsHost').appendChild($('creatorControls'));$('creatorControls').classList.add('moved-create')}else if(mode==='discover'){$('discoverControlsHost').appendChild($('creatorControls'));$('creatorControls').classList.remove('moved-create')}if(mode==='study')renderStudy();if(mode==='create')renderCreateEditor()}
+function bindUXNavigation(){
+ $('navDiscover').onclick=()=>setMode('discover');$('navCreate').onclick=()=>setMode('create');$('navStudy').onclick=()=>setMode('study');
+ $('proposalBack').onclick=()=>setMode('discover');$('proposalHome').onclick=()=>setMode('discover');$('proposalNext').onclick=()=>{if(selectedProposal<current.length-1){selectedProposal++;renderDetail(current[selectedProposal]);updateProposalNav()}};
+ $('audioToggle').onclick=()=>{$('audioPanel').hidden=!$('audioPanel').hidden};
+ $('surpriseBtn').onclick=()=>{const moodsList=['happy','energetic','dance','relax','romantic'],genres=['Pop','Pop rock','Rock','Indie','Blues','Jazz'];$('mood').value=moodsList[Math.floor(Math.random()*moodsList.length)];$('genre').value=genres[Math.floor(Math.random()*genres.length)];document.querySelectorAll('.mood-chip').forEach(x=>x.classList.toggle('selected',x.dataset.mood===$('mood').value));generate()};
+ $('createExportText').onclick=()=>{const p=current[selectedProposal];if(p)download(progressionText(p),`chordlab-${String(selectedProposal+1).padStart(2,'0')}-${safeFilePart(p.title)}.txt`,'text/plain')};$('createExportMidi').onclick=()=>{const p=current[selectedProposal];if(p)exportMidi(p,`chordlab-${String(selectedProposal+1).padStart(2,'0')}-${safeFilePart(p.title)}.mid`)};
+ document.addEventListener('click',e=>{if(!e.target.closest('.cl-tools')&&!e.target.closest('.audio-popover'))$('audioPanel').hidden=true});
+}
+
 function allChordOptions(key,currentName=''){let arr=[];for(let d=0;d<7;d++)arr.push(chordForDegree(key,d,'simple').name);for(const suf of ['','m','7','maj7','m7','9','13','7#9','7b9','sus2','sus4','add9'])arr.push(rootOf(key)+suf);if(currentName)arr.push(currentName);return [...new Set(arr)]}
 function frequencies(c){let r=idx(c.root),q=c.quality,ints=[0,4,7];if(q==='m'||q==='m7')ints=[0,3,7];if(q==='dim')ints=[0,3,6];if(q==='7')ints=[0,4,7,10];if(q==='maj7')ints=[0,4,7,11];if(q==='m7')ints=[0,3,7,10];if(q==='sus2')ints=[0,2,7];if(q==='sus4')ints=[0,5,7];if(q==='add9')ints=[0,4,7,14];if(q==='9')ints=[0,4,7,10,14];if(q==='13')ints=[0,4,7,10,14,21];if(q==='7#9')ints=[0,4,7,10,15];if(q==='7b9')ints=[0,4,7,10,13];return ints.map(n=>440*Math.pow(2,(48+r+n-69)/12))}
 // Programas General MIDI (0-based) utilizados por GeneralUser GS.
@@ -1101,7 +1172,7 @@ $('addSong').onclick=()=>{if(!current.length){$('summary').textContent='Primero 
 $('clearSong').onclick=()=>{song=[];renderSong()};
 $('exportSong').onclick=()=>download('ChordLab — Estructura de canción\n\n'+song.map((x,i)=>`${i+1}. ${sections[x.section]} (${x.key}) · ${x.bars||8} compases · ${x.meter||'4/4'}\n${x.chords.map((c,j)=>c+' ('+(x.durations?.[j]||'')+' compases)').join(' | ')}`).join('\n\n'),'chordlab-estructura.txt','text/plain');
 $('generate').onclick=generate;
-bindVolumeControls();renderFavorites();renderSong();generate();
+bindUXNavigation();bindVolumeControls();renderFavorites();renderSong();setMode('discover');generate();
 </script>
 
 </body></html>

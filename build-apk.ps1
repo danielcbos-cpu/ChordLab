@@ -1,4 +1,4 @@
-# ChordLab Android v0.2.1
+# ChordLab Android v0.3.0
 # Ejecutar desde la raíz del proyecto en una máquina con Android Studio/Gradle configurados.
 if (Test-Path .\gradlew.bat) {
   .\gradlew.bat assembleDebug

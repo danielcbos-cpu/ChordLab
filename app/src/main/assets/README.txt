@@ -1,4 +1,4 @@
-ChordLab Android v0.2.1 — Portrait UI
+ChordLab Android v0.3.0 — Portrait UI
 ======================================
 
 Actualización visual de ChordLab Android v0.2 para teléfonos en orientación vertical.
@@ -22,4 +22,4 @@ Uso con HTML to APK Builder:
 3. Activa JavaScript.
 4. Orientación recomendada: Landscape + Portrait, si el constructor lo permite.
 5. Nombre: ChordLab.
-6. Versión: 0.2.1.
+6. Versión: 0.3.0.
