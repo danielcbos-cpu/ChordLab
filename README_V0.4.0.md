@@ -1,4 +1,4 @@
-# ChordLab Android v0.4.0
+# ChordLab Android v0.4.1
 
 Nueva interfaz basada fielmente en las últimas pantallas visuales acordadas.
 
