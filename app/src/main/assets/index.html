@@ -573,7 +573,7 @@ function findGuitarVoicing(chord,previous){
 // Catálogo curado de digitaciones abiertas y posiciones habituales en afinación estándar.
 // Orden de cuerdas: sexta E grave -> primera e aguda. -1=silenciada, 0=al aire.
 const COMMON_GUITAR_SHAPES={
- 'C|maj':[-1,3,2,0,1,0], 'A|maj':[-1,0,2,2,2,0], 'G|maj':[3,2,0,0,0,3], 'E|maj':[0,2,2,1,0,0], 'D|maj':[-1,-1,0,2,3,2],
+ 'C|maj':[-1,3,2,0,1,0], 'A|maj':[-1,0,2,2,2,0], 'G|maj':[3,2,0,0,0,3], 'E|maj':[0,2,2,1,0,0], 'D|maj':[-1,-1,0,2,3,2], 'F|maj7':[-1,-1,3,2,1,0],
  'A|min':[-1,0,2,2,1,0], 'E|min':[0,2,2,0,0,0], 'D|min':[-1,-1,0,2,3,1],
  'A|7':[-1,0,2,0,2,0], 'D|7':[-1,-1,0,2,1,2], 'E|7':[0,2,0,1,0,0], 'G|7':[3,2,0,0,0,1],
  'A|m7':[-1,0,2,0,1,0], 'D|maj7':[-1,-1,0,2,2,2], 'G|maj7':[3,2,0,0,0,2],
@@ -586,6 +586,12 @@ function guitarShapeKey(chord){
  if(q==='m')kind='min';else if(q==='7')kind='7';else if(q==='maj7')kind='maj7';else if(q==='m7')kind='m7';else if(q==='sus2')kind='sus2';else if(q==='sus4')kind='sus4';else if(q==='dim')kind='dim';
  return `${chord.root}|${kind}`;
 }
+const GUITAR_BARRES={
+ 'B|min':[{f:2,from:1,to:5}],
+ 'B|m7':[{f:2,from:1,to:5}],
+ 'F#|min':[{f:2,from:1,to:5}],
+ 'F#|maj':[{f:2,from:0,to:5}]
+};
 function positionsFromShape(shape){return shape.map((f,i)=>f<0?{f:-1,midi:null,pc:null}:{f,midi:GUITAR_STRINGS[i].midi+f,pc:(GUITAR_STRINGS[i].midi+f)%12});}
 function renderGuitarChordDiagram(chord,index){
  const tones=guitarChordIntervals(chord),key=guitarShapeKey(chord),shape=COMMON_GUITAR_SHAPES[key];
@@ -596,10 +602,32 @@ function renderGuitarChordDiagram(chord,index){
  const sounding=pos.filter(x=>x.midi!==null),frets=sounding.filter(x=>x.f>0).map(x=>x.f),min=frets.length?Math.min(...frets):1,max=frets.length?Math.max(...frets):1,start=min>3?min:1,end=Math.max(start+2,Math.min(12,start+3));
  const left=19,right=111,top=28,bottom=132,dx=(right-left)/5,dy=(bottom-top)/(end-start+1);
  let svg=`<svg class="guitar-svg" viewBox="0 0 130 154" role="img" aria-label="Diagrama vertical de digitación de ${chord.name}">`;
+ // Detecta grupos contiguos en el mismo traste que se representan como cejilla.
+ const barreGroups=(GUITAR_BARRES[key]||[]).map(b=>({...b}));
+ // Si no hay una cejilla catalogada, detecta grupos contiguos de tres o más notas en el mismo traste.
+ if(!barreGroups.length){
+  for(let f=1;f<=12;f++){
+   let i=0;
+   while(i<6){
+    if(pos[i].f!==f){i++;continue;}
+    let j=i;
+    while(j+1<6&&pos[j+1].f===f)j++;
+    if(j-i>=2)barreGroups.push({f,from:i,to:j});
+    i=j+1;
+   }
+  }
+ }
+ const barreStringIndexes=new Set();
+ for(const b of barreGroups){
+  for(let i=b.from;i<=b.to;i++)barreStringIndexes.add(`${b.f}:${i}`);
+  const x1=left+b.from*dx,x2=left+b.to*dx,y=top+(b.f-start+.5)*dy;
+  svg+=`<rect x="${x1-4}" y="${y-4}" width="${x2-x1+8}" height="8" rx="4" fill="#078BFA"/>`;
+ }
+
  for(let i=0;i<6;i++){const x=left+i*dx;svg+=`<line x1="${x}" y1="${top}" x2="${x}" y2="${bottom}" stroke="#91a5b5" stroke-width="${i===0?2:1.1}"/>`;}
  for(let f=0;f<=end-start+1;f++){const y=top+f*dy;svg+=`<line x1="${left}" y1="${y}" x2="${right}" y2="${y}" stroke="#91a5b5" stroke-width="${f===0&&start===1?2.5:1.1}"/>`;}
  if(start>1)svg+=`<text x="1" y="${top+dy*.7}" font-size="8" fill="#526b83">${start}º</text>`;
- for(let i=0;i<6;i++){const x=left+i*dx,p=pos[i];svg+=`<text x="${x}" y="12" font-size="9" text-anchor="middle" fill="#29445b">${GUITAR_STRINGS[i].name}</text>`;if(p.midi===null)svg+=`<text x="${x}" y="${top-4}" font-size="12" text-anchor="middle" fill="#9a5360">×</text>`;else if(p.f===0)svg+=`<circle cx="${x}" cy="${top-4}" r="3.4" fill="none" stroke="#078BFA" stroke-width="1.5"/>`;else{const y=top+(p.f-start+.5)*dy;svg+=`<circle cx="${x}" cy="${y}" r="5.2" fill="#078BFA"/><text x="${x}" y="${y+2.3}" font-size="6.5" text-anchor="middle" fill="#fff">${p.pc===idx(chord.root)?'R':''}</text>`;}}
+ for(let i=0;i<6;i++){const x=left+i*dx,p=pos[i];svg+=`<text x="${x}" y="12" font-size="9" text-anchor="middle" fill="#29445b">${GUITAR_STRINGS[i].name}</text>`;if(p.midi===null)svg+=`<text x="${x}" y="${top-4}" font-size="12" text-anchor="middle" fill="#9a5360">×</text>`;else if(p.f===0)svg+=`<circle cx="${x}" cy="${top-4}" r="3.4" fill="none" stroke="#078BFA" stroke-width="1.5"/>`;else{const y=top+(p.f-start+.5)*dy;if(!barreStringIndexes.has(`${p.f}:${i}`))svg+=`<circle cx="${x}" cy="${y}" r="5.2" fill="#078BFA"/>`;if(p.pc===idx(chord.root))svg+=`<text x="${x}" y="${y+2.3}" font-size="6.5" text-anchor="middle" fill="#fff">${'R'}</text>`;}}
  svg+='</svg>';const pcs=[...new Set(sounding.map(x=>x.pc))],omitted=tones.essential.filter(pc=>!pcs.includes(pc));
  return `<article class="guitar-chord-card"><div class="guitar-chord-title">${chord.name}</div><div class="guitar-chord-sub">${commonChordName(chord)}</div>${svg}<div class="guitar-finger-key">${omitted.length?'Forma simplificada':shape?'Posición de referencia':'Raíz en el bajo'}</div></article>`;
 }
